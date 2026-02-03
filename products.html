@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Krypteq – Products</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- UIkit -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+
+    <style>
+        .product-slideshow {
+            height: 190px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #0f172a;
+            margin-bottom: 12px;
+        }
+
+        .product-title {
+            font-weight: bold;
+            font-size: 1.05rem;
+        }
+
+        .product-specs {
+            font-size: 0.9rem;
+            color: #9CA3AF;
+            line-height: 1.4;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .add-cart {
+            background-color: #ff9900;
+            color: #000;
+            font-weight: bold;
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .add-cart:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+
+<body class="uk-background-muted">
+
+<!-- NAVBAR -->
+<div uk-sticky="top: 0; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container uk-navbar uk-navbar-transparent uk-background-secondary">
+        <div class="uk-container uk-flex uk-flex-center" style="padding: 20px;">
+            <ul class="uk-subnav uk-subnav-divider uk-text-bold">
+                <li><a href="Inicio.html">Home</a></li>
+                <li class="uk-active"><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="builder.html">Custom PC Builder</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- HEADER -->
+<div class="uk-container uk-margin-large-top uk-text-center">
+    <h1 class="uk-text-bold">Prebuilt Gaming PCs</h1>
+    <p class="uk-text-muted">
+        Professionally built systems — tested, optimized, and ready to ship.
+    </p>
+</div>
+
+<!-- PRODUCT GRID -->
+<div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+    <div class="uk-grid-match uk-child-width-1-2@m uk-child-width-1-4@l" uk-grid>
+
+        <!-- PRODUCT 1 -->
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded-large">
+
+                <div class="product-slideshow uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: slide; min-height: 200">
+                    <ul class="uk-slideshow-items">
+                        <li><img src="https://static.fnac-static.com/multimedia/Images/PT/NR/38/f7/a2/10680120/1505-1.jpg" alt="Krypteq Core Gaming PC"></li>
+                        <li><img src="https://static.fnac-static.com/multimedia/Images/PT/NR/38/f7/a2/10680120/1520-1.jpg" alt="Krypteq Core Gaming PC"></li>
+                        <li><img src="https://static.fnac-static.com/multimedia/Images/PT/NR/38/f7/a2/10680120/1520-2.jpg" alt="Krypteq Core Gaming PC"></li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+
+                <div class="product-title">Krypteq Core Gaming PC</div>
+                <div class="product-specs">
+                    Intel i5-14400F<br>
+                    RTX 4060 8GB<br>
+                    16GB DDR5<br>
+                    1TB NVMe SSD
+                </div>
+                <div class="price">$1,199</div>
+                <button class="uk-button add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded-large">
+                <div class="product-slideshow uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: slide; min-height: 200">
+                    <ul class="uk-slideshow-items">
+                        <li><img src="https://www.worten.pt/i/e0789f8872c89ed5fdf739f476bef3d304c53ee8" alt="Krypteq Performance PC"></li>
+                        <li><img src="https://www.worten.pt/i/72e53f32e44676ab0262e3efdf77332bb7298d28" alt="Krypteq Performance PC"></li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+
+                <div class="product-title">Krypteq Performance PC</div>
+                <div class="product-specs">
+                    Ryzen 7 7700X<br>
+                    RTX 4070 Super<br>
+                    32GB DDR5<br>
+                    1TB NVMe SSD
+                </div>
+                <div class="price">$1,699</div>
+                <button class="uk-button add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded-large">
+                <div class="product-slideshow uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: slide; min-height: 200">
+                    <ul class="uk-slideshow-items">
+                        <li><img src="https://source.unsplash.com/800x600/?white,gaming-pc" alt="Krypteq Snow RGB"></li>
+                        <li><img src="https://source.unsplash.com/800x600/?rgb,pc-interior" alt="Krypteq Snow RGB"></li>
+                        <li><img src="https://source.unsplash.com/800x600/?custom,pc" alt="Krypteq Snow RGB"></li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+
+                <div class="product-title">Krypteq Snow RGB</div>
+                <div class="product-specs">
+                    Intel i7-14700KF<br>
+                    RTX 4070 Ti<br>
+                    32GB DDR5 RGB<br>
+                    2TB NVMe SSD
+                </div>
+                <div class="price">$2,199</div>
+                <button class="uk-button add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded-large">
+                <div class="product-slideshow uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: slide; min-height: 200">
+                    <ul class="uk-slideshow-items">
+                        <li><img src="https://source.unsplash.com/800x600/?workstation,pc" alt="Krypteq Creator Pro"></li>
+                        <li><img src="https://source.unsplash.com/800x600/?creator,computer" alt="Krypteq Creator Pro"></li>
+                        <li><img src="https://source.unsplash.com/800x600/?pc,interior" alt="Krypteq Creator Pro"></li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+
+                <div class="product-title">Krypteq Creator Pro</div>
+                <div class="product-specs">
+                    Ryzen 9 7900X<br>
+                    RTX 4080<br>
+                    64GB DDR5<br>
+                    2TB NVMe SSD
+                </div>
+                <div class="price">$2,799</div>
+                <button class="uk-button add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT 5 -->
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded-large">
+                <div class="product-slideshow uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: slide; min-height: 200">
+                    <ul class="uk-slideshow-items">
+                        <li><img src="https://source.unsplash.com/800x600/?compact,pc" alt="Krypteq Compact"></li>
+                        <li><img src="https://source.unsplash.com/800x600/?small,computer" alt="Krypteq Compact"></li>
+                        <li><img src="https://source.unsplash.com/800x600/?pc,build" alt="Krypteq Compact"></li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+
+                <div class="product-title">Krypteq Compact</div>
+                <div class="product-specs">
+                    Ryzen 5 7600<br>
+                    RTX 4060 Ti<br>
+                    16GB DDR5<br>
+                    1TB NVMe SSD
+                </div>
+                <div class="price">$1,399</div>
+                <button class="uk-button add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT 6 -->
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded-large">
+                <div class="product-slideshow uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: slide; min-height: 200">
+                    <ul class="uk-slideshow-items">
+                        <li><img src="https://source.unsplash.com/800x600/?ultra,gaming-pc" alt="Krypteq Ultra"></li>
+                        <li><img src="https://source.unsplash.com/800x600/?rgb,pc" alt="Krypteq Ultra"></li>
+                        <li><img src="https://source.unsplash.com/800x600/?pc,interior" alt="Krypteq Ultra"></li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+
+                <div class="product-title">Krypteq Ultra</div>
+                <div class="product-specs">
+                    Intel i9-14900K<br>
+                    RTX 4090<br>
+                    64GB DDR5<br>
+                    4TB NVMe SSD
+                </div>
+                <div class="price">$3,999</div>
+                <button class="uk-button add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT 7 -->
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded-large">
+                <div class="product-slideshow uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: slide; min-height: 200">
+                    <ul class="uk-slideshow-items">
+                        <li><img src="https://source.unsplash.com/800x600/?silent,pc" alt="Krypteq Silent Pro"></li>
+                        <li><img src="https://source.unsplash.com/800x600/?minimal,computer" alt="Krypteq Silent Pro"></li>
+                        <li><img src="https://source.unsplash.com/800x600/?pc,build" alt="Krypteq Silent Pro"></li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+
+                <div class="product-title">Krypteq Silent Pro</div>
+                <div class="product-specs">
+                    Ryzen 7 7800X3D<br>
+                    RTX 4070 Super<br>
+                    32GB DDR5<br>
+                    2TB NVMe SSD
+                </div>
+                <div class="price">$1,999</div>
+                <button class="uk-button add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT 8 -->
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded-large">
+                <div class="product-slideshow uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: slide; min-height: 200">
+                    <ul class="uk-slideshow-items">
+                        <li><img src="https://source.unsplash.com/800x600/?budget,gaming-pc" alt="Krypteq Entry Gaming"></li>
+                        <li><img src="https://source.unsplash.com/800x600/?entry,computer" alt="Krypteq Entry Gaming"></li>
+                        <li><img src="https://source.unsplash.com/800x600/?pc,interior" alt="Krypteq Entry Gaming"></li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+
+                <div class="product-title">Krypteq Entry Gaming</div>
+                <div class="product-specs">
+                    Intel i3-14100F<br>
+                    RTX 3050<br>
+                    16GB DDR4<br>
+                    512GB SSD
+                </div>
+                <div class="price">$899</div>
+                <button class="uk-button add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="uk-background-secondary uk-padding uk-text-center">
+    <p class="uk-text-small">
+        © 2026 Krypteq — Precision-Built PCs
+    </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Krypteq | Custom PC Builder</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-background-muted">
+
+<!-- NAVBAR -->
+<div uk-sticky="top: 0; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container uk-navbar uk-navbar-transparent uk-background-secondary">
+        <div class="uk-container uk-flex uk-flex-center" style="padding: 20px;">
+            <ul class="uk-subnav uk-subnav-divider uk-text-bold">
+                <li><a href="Inicio.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="uk-active"><a href="builder.html">Custom PC Builder</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- HERO -->
+<div class="uk-height-medium uk-flex uk-flex-middle uk-flex-center uk-background-cover"
+     style="background-image:url('https://static.vecteezy.com/ti/vetor-gratis/t2/11947198-fundo-abstrato-preto-e-escuro-moderno-gratis-vetor.jpg')">
+    <h1 class="uk-text-bold" style="color:#E5E7EB">Custom PC Builder</h1>
+</div>
+
+<div class="uk-container uk-margin-large-top uk-margin-large-bottom uk-flex uk-flex-center">
+
+  <div class="uk-width-4-5@l uk-width-1-1">
+
+    <div class="uk-card uk-card-secondary uk-card-body uk-light">
+
+      <h2 class="uk-text-center uk-text-bold uk-margin-large-bottom">
+        Build Your Custom PC
+      </h2>
+
+      <table class="uk-table uk-table-divider uk-table-middle uk-table-hover">
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Selection</th>
+            <th class="uk-text-right">Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <!-- CPU -->
+          <tr>
+            <td class="uk-text-bold">CPU</td>
+            <td>
+              <select class="uk-select component">
+                <option data-price="0">Choose a CPU</option>
+
+                <optgroup label="Intel">
+                  <option data-price="119.99">Intel Core i3-13100F (4C/8T)</option>
+                  <option data-price="219.99">Intel Core i5-13400F (10C/16T)</option>
+                  <option data-price="299.99">Intel Core i5-13600K (14C/20T)</option>
+                  <option data-price="409.99">Intel Core i7-14700K (20C/28T)</option>
+                  <option data-price="589.99">Intel Core i9-14900K (24C/32T)</option>
+                </optgroup>
+
+                <optgroup label="AMD">
+                  <option data-price="139.99">AMD Ryzen 5 5600 (6C/12T)</option>
+                  <option data-price="329.99">AMD Ryzen 7 5800X3D (8C/16T)</option>
+                  <option data-price="229.99">AMD Ryzen 5 7600 (6C/12T)</option>
+                  <option data-price="449.99">AMD Ryzen 7 7800X3D (8C/16T)</option>
+                  <option data-price="549.99">AMD Ryzen 9 7950X (16C/32T)</option>
+                </optgroup>
+              </select>
+            </td>
+            <td class="uk-text-right">$<span class="price">0.00</span></td>
+          </tr>
+
+          <!-- GPU -->
+          <tr>
+            <td class="uk-text-bold">Graphics Card</td>
+            <td>
+              <select class="uk-select component">
+                <option data-price="0">Choose a GPU</option>
+
+                <optgroup label="NVIDIA">
+                  <option data-price="279.99">RTX 3060 12GB</option>
+                  <option data-price="399.99">RTX 4060 Ti 8GB</option>
+                  <option data-price="599.99">RTX 4070 Super 12GB</option>
+                  <option data-price="999.99">RTX 4080 Super 16GB</option>
+                  <option data-price="1599.99">RTX 4090 24GB</option>
+                </optgroup>
+
+                <optgroup label="AMD">
+                  <option data-price="329.99">RX 6700 XT 12GB</option>
+                  <option data-price="499.99">RX 7800 XT 16GB</option>
+                  <option data-price="699.99">RX 7900 XT 20GB</option>
+                  <option data-price="899.99">RX 7900 XTX 24GB</option>
+                </optgroup>
+              </select>
+            </td>
+            <td class="uk-text-right">$<span class="price">0.00</span></td>
+          </tr>
+
+          <!-- Motherboard -->
+          <tr>
+            <td class="uk-text-bold">Motherboard</td>
+            <td>
+              <select class="uk-select component">
+                <option data-price="0">Choose a Motherboard</option>
+
+                <optgroup label="Intel">
+                  <option data-price="159.99">B760 ATX (DDR5)</option>
+                  <option data-price="229.99">Z790 ATX (DDR5)</option>
+                  <option data-price="279.99">Z790 ATX WiFi (DDR5)</option>
+                </optgroup>
+
+                <optgroup label="AMD">
+                  <option data-price="129.99">B550 ATX (AM4)</option>
+                  <option data-price="189.99">B650 ATX (AM5)</option>
+                  <option data-price="329.99">X670E ATX (AM5)</option>
+                </optgroup>
+              </select>
+            </td>
+            <td class="uk-text-right">$<span class="price">0.00</span></td>
+          </tr>
+
+          <!-- RAM -->
+          <tr>
+            <td class="uk-text-bold">Memory</td>
+            <td>
+              <select class="uk-select component">
+                <option data-price="0">Choose RAM</option>
+                <option data-price="69.99">16GB DDR4 3200MHz</option>
+                <option data-price="129.99">32GB DDR4 3600MHz</option>
+                <option data-price="89.99">16GB DDR5 5600MHz</option>
+                <option data-price="159.99">32GB DDR5 6000MHz</option>
+                <option data-price="289.99">64GB DDR5 6000MHz</option>
+              </select>
+            </td>
+            <td class="uk-text-right">$<span class="price">0.00</span></td>
+          </tr>
+
+          <!-- Storage -->
+          <tr>
+            <td class="uk-text-bold">Storage</td>
+            <td>
+              <select class="uk-select component">
+                <option data-price="0">Choose Storage</option>
+                <option data-price="49.99">500GB NVMe SSD</option>
+                <option data-price="79.99">1TB NVMe SSD</option>
+                <option data-price="149.99">2TB NVMe SSD</option>
+                <option data-price="289.99">4TB NVMe SSD</option>
+                <option data-price="59.99">2TB HDD</option>
+                <option data-price="89.99">4TB HDD</option>
+              </select>
+            </td>
+            <td class="uk-text-right">$<span class="price">0.00</span></td>
+          </tr>
+
+          <!-- Cooling -->
+          <tr>
+            <td class="uk-text-bold">CPU Cooling</td>
+            <td>
+              <select class="uk-select component">
+                <option data-price="0">Choose Cooling</option>
+                <option data-price="39.99">Air Cooler (120mm)</option>
+                <option data-price="79.99">Dual Tower Air Cooler</option>
+                <option data-price="109.99">240mm AIO</option>
+                <option data-price="159.99">360mm AIO</option>
+              </select>
+            </td>
+            <td class="uk-text-right">$<span class="price">0.00</span></td>
+          </tr>
+
+          <!-- PSU -->
+          <tr>
+            <td class="uk-text-bold">Power Supply</td>
+            <td>
+              <select class="uk-select component">
+                <option data-price="0">Choose PSU</option>
+                <option data-price="79.99">650W 80+ Bronze</option>
+                <option data-price="119.99">750W 80+ Gold</option>
+                <option data-price="149.99">850W 80+ Gold</option>
+                <option data-price="199.99">1000W 80+ Gold</option>
+              </select>
+            </td>
+            <td class="uk-text-right">$<span class="price">0.00</span></td>
+          </tr>
+
+          <!-- Case -->
+          <tr>
+            <td class="uk-text-bold">Case</td>
+            <td>
+              <select class="uk-select component">
+                <option data-price="0">Choose Case</option>
+                <option data-price="89.99">Micro-ATX Airflow</option>
+                <option data-price="109.99">Mid Tower ATX Airflow</option>
+                <option data-price="139.99">Mid Tower ATX RGB</option>
+                <option data-price="179.99">Full Tower ATX</option>
+              </select>
+            </td>
+            <td class="uk-text-right">$<span class="price">0.00</span></td>
+          </tr>
+
+          <!-- OS -->
+          <tr>
+            <td class="uk-text-bold">Operating System</td>
+            <td>
+              <select class="uk-select component">
+                <option data-price="0">Choose OS</option>
+                <option data-price="119.99">Windows 11 Home</option>
+                <option data-price="159.99">Windows 11 Pro</option>
+              </select>
+            </td>
+            <td class="uk-text-right">$<span class="price">0.00</span></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <div class="uk-card uk-card-primary uk-card-body uk-text-center uk-margin-top">
+        <h4 class="uk-margin-remove">Estimated Total</h4>
+        <h1 id="totalPrice">$0.00</h1>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <script>
+    const selects = document.querySelectorAll('.component');
+    const totalPrice = document.getElementById('totalPrice');
+
+    selects.forEach(select => select.addEventListener('change', updateTotal));
+
+    function updateTotal() {
+     let total = 0;
+
+     selects.forEach(select => {
+       const price = parseFloat(select.selectedOptions[0].dataset.price || 0);
+       select.closest('tr').querySelector('.price').textContent = price.toFixed(2);
+       total += price;
+     });
+
+     totalPrice.textContent = '$' + total.toFixed(2);
+    }       
+    </script>
